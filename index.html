@@ -37,6 +37,52 @@ this is my personal web site
     </a>
   </body>
   </html>
+    34
+
+add a comment
+-1
+
+try this
+
+<div class="">
+
+        <fieldset>
+            <legend>Item Details</legend>
+            <label>Enter Item Name</label>
+            <input type="text" placeholder="Item Name" id="item_name">
+            <label>Quantity</label>
+            <select class="input-mini" id="quentity">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <button class="btn" onclick="viewRecord()">Add Data</button>
+        </fieldset>
+
+</div>
+<div class="">
+    <table class="table controls controls-row">
+        <thead>
+            <tr id="heading">
+                <th> S.no </th>
+                <th> Item Name </th>
+                <th> Quantity </th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+js part
+
+var index=0;
+function viewRecord(){
+    index++;
+$('table tbody').append('<tr><td>'+index+'</td><td>'+$("#item_name").val()+' </td><td> '+$("#quentity option:selected").val()+'</td></tr>');
+}
 
 Skip to content
 All gists
