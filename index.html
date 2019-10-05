@@ -43,7 +43,18 @@ add a comment
 -1
 
 try this
+<html>
+	<head>
+<script language="text/javascript">
 
+var index=0;
+function viewRecord(){
+    index++;
+$('table tbody').append('<tr><td>'+index+'</td><td>'+$("#item_name").val()+' </td><td> '+$("#quentity option:selected").val()+'</td></tr>');
+}	
+</script>
+	</head>
+	<body>
 <div class="">
 
         <fieldset>
@@ -75,14 +86,9 @@ try this
         </tbody>
     </table>
 </div>
+	</body>
+</html>
 
-js part
-
-var index=0;
-function viewRecord(){
-    index++;
-$('table tbody').append('<tr><td>'+index+'</td><td>'+$("#item_name").val()+' </td><td> '+$("#quentity option:selected").val()+'</td></tr>');
-}
 
 Skip to content
 All gists
