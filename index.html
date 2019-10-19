@@ -5,22 +5,32 @@ this is my personal web site
 <title>reg form</title>
 <script languege="text/javascript">
 
-function result(){
+function results(){
 
-var = document.getElementById('name').value;
-var = document.getElementById('email').value;
+var name = document.getElementById('name').value;
+var emeil = document.getElementById('email').value;
+	if(document.getElementById("poll1").checked){
+		poll = document.getElementById("poll1").value;
+	} else if(document.getElementById("poll2").checked){
+		poll = document.getElementById("poll2").value;
+	} else {
+		poll = document.getElementById("poll3").value;
+	};
+	var coments = document.getElementById("coments").value;
+	
 document.write("<h1>THANK YOU</h1>");
 document.write("<p>now: your data will be send via email</p>");
 document.write("<h3>here is your data:</h3>");
-document.write(name, +"<br/>");
-document.write(email, +"<br/>");
+document.write(name +"<br/>");
+document.write(email +"<br/>");
+document.write(coments +"<br/>);	
 }
 
 </script>
 
 </head>
 <body>
-<form onsubmit=" return result();" method="post" action="saminuyusuf@yahoo.com">
+<form onsubmit=" return results();" method="post" action="saminuyusuf@yahoo.com">
 <h1>ENTER NAME</h1>
 <input id="name" type="text" name="name">
 <h1>ENTER EMAIL:</h1>
