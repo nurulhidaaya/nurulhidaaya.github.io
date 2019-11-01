@@ -1,54 +1,6 @@
 # nurulhidaaya.github.io
-this is my personal web site
-<html>
-<head>
-<title>reg form</title>
-<script languege="text/javascript">
 
-function results(){
 
-var name = document.getElementById('name').value;
-var emeil = document.getElementById('email').value;
-	if(document.getElementById("poll1").checked){
-		poll = document.getElementById("poll1").value;
-	} else if(document.getElementById("poll2").checked){
-		poll = document.getElementById("poll2").value;
-	} else {
-		poll = document.getElementById("poll3").value;
-	};
-	var coments = document.getElementById("coments").value;
-	
-document.write("<h1>THANK YOU</h1>");
-document.write("<p>now: your data will be send via email</p>");
-document.write("<h3>here is your data:</h3>");
-document.write(name +"<br/>");
-document.write(email +"<br/>");
-document.write(coments +"<br/>);	
-}
-
-</script>
-
-</head>
-<body>
-<form onsubmit=" return results();" method="post" action="saminuyusuf@yahoo.com">
-<h1>ENTER NAME</h1>
-<input id="name" type="text" name="name">
-<h1>ENTER EMAIL:</h1>
-<input id="name" type="text" name="name">
-
-<h1>how do you like my website</h1>
-<input id="poll1" type="radio" name="websit_poll" value="love it">LOVE IT:<br/>
-<input id="poll2" type="radio" name="websit_poll" value="i like ">I LIKE:<br/>
-<input id="poll3" type="radio" name="websit_poll" value="blaah ">BLAAH:<br/>
-
-<h1>LEAVE A COMENT</h1>
-<textarea ="coment" name="coment" rows="6" cols="5">right something</textarea>
-<p/>
-<input id="submit" type="submit" value="send your data">
-</form>
-
-</body>
-</html>
 
     <a href="08161296826">
         <form>
@@ -126,55 +78,10 @@ Last active last month • Report abuse
 
     0
 
-Code
-Revisions 2
-Stars 7
-Save form data in JSON file.
-save2JSON.php
-<?php
-if(isset($_POST['submit'])) {
-	$file = "data.json";
-	$json_string = json_encode($_POST, JSON_PRETTY_PRINT);
-	file_put_contents($file, $json_string, FILE_APPEND);
-	header('Location: thanks.php'); 
-}
-?>
-<!doctype html>
-<html>
-<head>
-</head>
-<body>
-<center>
-    <h1>Form</h1>
-          <form name="https://taammat.github.io/index.html" method="post" action="https://taamma.github.io/index.html">
-            <p>
-              <label for="name">Name: </label>
-              <input type="text" name="name" id="name" placeholder="Your full name" autofocus required>
-            </p>
-            <p>
-              <label for="email">Email: </label>
-              <input type="email" name="email" id="email">
-            </p>
-            <p>
-              <label for="cell">Cell: </label>
-              <input type="tel" name="cell" id="cell">
-            </p>
-            <p>
-              <label for="dob">Date of birth: </label>
-              <input type="date" name="dob" id="dob">
-            </p>
-            <p>
-              <label for="study">Years of art study: </label>
-              0 <input type="range" name="study" id="study" min="0" max="16"> 16
-            </p>
-            <p style="text-align: center;">
-              <input type="submit" name="submit" id="submit" value="Submit">
-            </p>
-          </form>
-</center>
-</body>
-</html>
-<form action="https://formspree.com/saminuyusuf726@yahoo.com" method="POST"/>
+
+
+
+<form action="https://formspree.io/saminuyusuf726@yahoo.com" method="POST"/>
     <input type="text" name="name">
     <input type="email" name="_replyto">
     <input type="submit" value="Send">
